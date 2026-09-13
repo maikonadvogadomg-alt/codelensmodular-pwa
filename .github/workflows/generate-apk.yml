@@ -41,7 +41,7 @@ jobs:
       - name: Init TWA
         run: |
           mkdir -p apk-build && cd apk-build
-          bubblewrap init --manifest "https://maikonadvogadomg-alt.github.io/codelensmodular-pwa/manifest.webmanifest" --directory . --skipPwaValidation 2>&1 || true
+          bubblewrap init --manifest "https://maikonadvogadomg-alt.github.io/codelenshtml14-pwa/manifest.webmanifest" --directory . --skipPwaValidation 2>&1 || true
 
       - name: Build APK
         working-directory: apk-build
